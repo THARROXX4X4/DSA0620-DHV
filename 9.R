@@ -1,0 +1,14 @@
+# -------- Data --------
+month <- 1:3
+avg_score <- c(81.5, 78.5, 79.0)
+
+# -------- Plot --------
+plot(month, avg_score,
+     type = "b",
+     col = "purple",
+     pch = 1,              # open circle like in image
+     lty = 1,
+     main = "Monthly Avg Quiz Score",
+     xlab = "Month",
+     ylab = "Average Score",
+     ylim = c(78.3, 81.7))  # to match visual range

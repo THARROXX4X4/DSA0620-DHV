@@ -1,0 +1,17 @@
+# Sample data
+products <- c("Product A", "Product B", "Product C", "Product D", "Product E")
+sales <- c(500, 700, 650, 800, 600)
+
+# Create bar chart
+barplot(sales,
+        names.arg = products,
+        col = "skyblue",
+        xlab = "Products",              # X-axis label
+        ylab = "Sales",                # Y-axis label
+        main = "Top-Selling Products of the Year")  # Title
+
+# Add values on top of bars
+text(x = seq_along(sales),
+     y = sales,
+     label = sales,
+     pos = 3)

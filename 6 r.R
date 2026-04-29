@@ -1,0 +1,25 @@
+# Sample data (rows = satisfaction levels, columns = age groups)
+data <- matrix(c(10, 15, 20,   # Very Satisfied
+                 20, 25, 30,   # Satisfied
+                 15, 20, 25,   # Neutral
+                 10, 10, 15,   # Dissatisfied
+                 5,  5,  10),  # Very Dissatisfied
+               nrow = 5, byrow = TRUE)
+
+# Row and column names
+rownames(data) <- c("Very Satisfied", "Satisfied", "Neutral",
+                    "Dissatisfied", "Very Dissatisfied")
+
+colnames(data) <- c("18-25", "26-40", "41-60")
+
+# Create stacked bar chart
+barplot(data,
+        col = rainbow(5),
+        main = "Customer Satisfaction by Age Group",
+        xlab = "Age Groups",
+        ylab = "Number of Customers")
+
+# Add legend
+legend("topright",
+       legend = rownames(data),
+       fill = rainbow(5))

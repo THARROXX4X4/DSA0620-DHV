@@ -1,0 +1,9 @@
+# Sample data (number of responses)
+scores <- c(20, 35, 25, 15, 5)
+labels <- c("Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very Dissatisfied")
+
+# Create pie chart
+pie(scores,
+    labels = paste(labels, scores, sep = " - "),
+    col = rainbow(length(scores)),
+    main = "Customer Satisfaction Distribution")

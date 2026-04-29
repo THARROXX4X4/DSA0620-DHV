@@ -1,0 +1,11 @@
+# -------- Data --------
+departments <- c("HR", "Marketing", "Sales")
+counts <- c(1, 1, 1)   # equal height bars as shown
+
+# -------- Bar Plot --------
+barplot(counts,
+        names.arg = departments,
+        col = "green",
+        main = "Employees by Department",
+        xlab = "Department",
+        ylab = "Count")

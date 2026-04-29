@@ -1,0 +1,22 @@
+# -------- Data --------
+questions <- c("A", "B", "C", "D")
+
+Q1 <- c(1, 1, 1, 0)
+Q2 <- c(2, 1, 0, 0)
+Q3 <- c(0, 1, 1, 1)
+
+# Combine into matrix (rows = Q1, Q2, Q3)
+data_matrix <- rbind(Q1, Q2, Q3)
+
+# -------- Bar Plot --------
+barplot(data_matrix,
+        names.arg = questions,
+        col = c("red", "blue", "green"),
+        main = "Overall Response Distribution",
+        xlab = "Questions",
+        ylab = "Count")
+
+# -------- Legend --------
+legend("topright",
+       legend = c("Q1", "Q2", "Q3"),
+       fill = c("red", "blue", "green"))

@@ -1,0 +1,17 @@
+# Sample data
+ad_budget <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65)
+sales <- c(100, 120, 150, 160, 180, 200, 210, 230, 250, 270, 300, 320)
+
+# Create scatter plot
+plot(ad_budget, sales,
+     main = "Advertising Budget vs Monthly Sales",
+     xlab = "Advertising Budget (in thousands)",
+     ylab = "Monthly Sales",
+     col = "blue",
+     pch = 19)
+
+# Add trend line
+abline(lm(sales ~ ad_budget), col = "red")
+
+# Add grid
+grid()

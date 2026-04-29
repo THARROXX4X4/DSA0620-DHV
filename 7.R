@@ -1,0 +1,12 @@
+# -------- Data --------
+gender <- c("Male", "Female")
+values <- c(35, 65)   # adjust proportions if needed
+
+# -------- Colors --------
+colors <- c("lightblue", "pink")
+
+# -------- Pie Chart --------
+pie(values,
+    labels = gender,
+    col = colors,
+    main = "Gender Distribution")

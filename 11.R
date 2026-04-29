@@ -1,0 +1,12 @@
+# -------- Data --------
+categories <- c("Electronics", "Clothing", "Appliances")
+values <- c(40, 30, 30)   # adjust proportions if needed
+
+# -------- Colors --------
+colors <- c("blue", "green", "orange")
+
+# -------- Pie Chart --------
+pie(values,
+    labels = categories,
+    col = colors,
+    main = "Sales Distribution")

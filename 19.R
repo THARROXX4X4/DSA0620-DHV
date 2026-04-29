@@ -1,0 +1,13 @@
+q1 <- c("A","B","C")
+
+# Grouped
+barplot(table(q1), col="red",
+        main="Grouped Responses")
+
+# Stacked (example)
+data <- matrix(c(1,1,1), nrow=3)
+barplot(data, col=rainbow(3),
+        main="Stacked Responses")
+
+df <- data.frame(ID=1:3, Q1=q1)
+df
